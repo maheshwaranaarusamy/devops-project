@@ -27,7 +27,7 @@ jobs:
           context: ./app
           file: ./app/Dockerfile
           push: true
-          tags: |
+          tags: 
       ${{ secrets.DOCKER_USERNAME }}/devops-node-app:${{ github.sha }}
       ${{ secrets.DOCKER_USERNAME }}/devops-node-app:latest
 
