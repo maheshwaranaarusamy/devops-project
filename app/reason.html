@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reason</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #050711;
+      color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    .hero-title {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      color: #b3b3b3;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+
+    .timeline {
+      border-left: 1px solid #333;
+      padding-left: 18px;
+      margin-top: 12px;
+    }
+
+    .timeline-item {
+      margin-bottom: 18px;
+      position: relative;
+      padding-left: 8px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #46c2ff;
+      position: absolute;
+      left: -23px;
+      top: 3px;
+    }
+
+    .timeline-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #888;
+      margin-bottom: 3px;
+    }
+
+    .timeline-text {
+      font-size: 13px;
+      color: #e2e2e2;
+      line-height: 1.5;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .value-card {
+      border: 1px solid #262626;
+      border-radius: 8px;
+      padding: 14px 14px 16px;
+      background: radial-gradient(circle at top left, #181826, #050711);
+    }
+
+    .value-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .value-text {
+      font-size: 13px;
+      color: #c2c2c2;
+      line-height: 1.5;
+    }
+
+    .image-block {
+      border-radius: 12px;
+      border: 1px solid #262626;
+      padding: 18px;
+      background: linear-gradient(135deg, #121420, #050711);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .image-placeholder {
+      border-radius: 10px;
+      border: 1px dashed #3a3a3a;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .image-caption {
+      font-size: 13px;
+      color: #c9c9c9;
+      line-height: 1.5;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: #9c9c9c;
+      margin-top: 8px;
+    }
+
+    .signature {
+      margin-top: 22px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- MODULE 1: ENTRY -->
+    <section class="section">
+      <div class="hero-title">This is not a portfolio piece.</div>
+      <div class="hero-title">This is a reason.</div>
+      <p class="hero-sub">
+        Some projects are built to tick boxes on a resume.
+        Some are built because someone quietly made showing up feel worth it.
+      </p>
+    </section>
+
+    <!-- MODULE 2: TIMELINE -->
+    <section class="section">
+      <div class="section-title">What it took</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-label">Day 1</div>
+          <div class="timeline-text">
+            Systems broke more than they worked. Still showed up.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-label">Day 3</div>
+          <div class="timeline-text">
+            Pipelines failed, images rebuilt, patience learned instead of frustration.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-label">Day 5</div>
+          <div class="timeline-text">
+            App, database, and cluster finally started speaking the same language.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-label">Day 7</div>
+          <div class="timeline-text">
+            Not perfect. But stable. And still improving.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE 3: VALUES -->
+    <section class="section">
+      <div class="section-title">Things I believe in</div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-title">Reliability</div>
+          <div class="value-text">
+            Systems should work when it matters. So should people.
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-title">Patience</div>
+          <div class="value-text">
+            Rushed builds break. The good things survive retries.
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-title">Ownership</div>
+          <div class="value-text">
+            If something fails, you fix it. Not blame the environment.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE 4: IMAGE / METAPHOR BLOCK -->
+    <section class="section">
+      <div class="section-title">Not everything is public</div>
+      <div class="image-block">
+        <div class="image-placeholder">
+          One late-night desk, one quiet screen, one person trying again.
+          <br/><br/>
+          (You can replace this block with a photo later if you want.)
+        </div>
+        <p class="image-caption">
+          Not everything meaningful is exposed by default. In systems, and in life,
+          some layers stay behind the scenes but silently keep everything running.
+        </p>
+      </div>
+    </section>
+
+    <!-- MODULE 5: CLOSING -->
+    <section class="section">
+      <p class="footer-note">
+        This page exists quietly. Like the motivation behind consistency.
+      </p>
+      <div class="signature">— M</div>
+    </section>
+
+  </div>
+</body>
+</html>
