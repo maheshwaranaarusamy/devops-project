@@ -4,6 +4,11 @@ const path = require('path');
 const app = express();
 
 // =====================
+// SERVE STATIC FILES (HTML, CSS, IMAGES)
+// =====================
+app.use(express.static(__dirname));
+
+// =====================
 // BASIC HEALTH ROUTE
 // =====================
 app.get('/', (req, res) => {
@@ -14,13 +19,27 @@ app.get('/', (req, res) => {
 });
 
 // =====================
-// REASON LAYER (Hidden)
+// REASON PAGE
 // =====================
 if (process.env.SHOW_REASON_LAYER === 'true') {
   app.get('/reason', (req, res) => {
     res.sendFile(path.join(__dirname, 'reason.html'));
   });
 }
+
+// =====================
+// NOTE PAGE
+// =====================
+app.get('/note', (req, res) => {
+  res.sendFile(path.join(__dirname, 'note.html'));
+});
+
+// =====================
+// TRUTH PAGE
+// =====================
+app.get('/truth', (req, res) => {
+  res.sendFile(path.join(__dirname, 'truth.html'));
+});
 
 // =====================
 // START SERVER
