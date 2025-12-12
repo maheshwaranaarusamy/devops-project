@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>A Note From Me</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+        :root{
+            --bg:#0b0d17;
+            --card:#141722;
+            --muted:#cfcfcf;
+            --accent:#ff6b6b;
+            --accent-2:#ff4f4f;
+            --soft:#2b2f3d;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #0d1024, #050711 60%);
+            color: #f5f5f5;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            padding: 40px 20px;
+            max-width: 760px;
+            margin: auto;
+            animation: fadeIn 0.9s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity:0; transform: translateY(12px);}
+            to { opacity:1; transform: translateY(0);}
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight:700;
+            color: var(--accent-2);
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255,79,79,0.25);
+        }
+
+        /* Highlight banner */
+        .highlight {
+            margin: 18px 0;
+            background: linear-gradient(90deg, rgba(255,111,111,0.12), rgba(255,79,79,0.06));
+            border-left: 4px solid var(--accent-2);
+            padding: 18px 20px;
+            border-radius: 10px;
+        }
+
+        .highlight .big {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--accent-2);
+        }
+
+        .highlight .sub {
+            margin-top: 6px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .card {
+            background: var(--card);
+            padding: 26px;
+            border-radius: 12px;
+            margin-top: 14px;
+            box-shadow: 0 0 14px rgba(0,0,0,0.45);
+            line-height: 1.8;
+        }
+
+        .card p {
+            margin: 12px 0;
+            color: #e0e0e0;
+            font-size: 15px;
+        }
+
+        .signature {
+            margin-top: 20px;
+            opacity: 0.7;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 16px;
+            background: var(--soft);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.25s;
+        }
+
+        .btn:hover {
+            background: #343a52;
+        }
+
+        .btn-red {
+            background: var(--accent-2);
+            color: #fff;
+        }
+
+        .btn-red:hover {
+            background: #e84343;
+        }
+
+        @media (max-width:520px){
+            .highlight .big { font-size:22px;}
+            h1 { font-size:24px;}
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>A Note From Me</h1>
+
+    <div class="highlight">
+        <div class="big">I will wait for you</div>
+        <div class="sub">No pressure. No rush. I’ll be here when you’re ready.</div>
+    </div>
+
+    <div class="card">
+        <p>I know you're hurt, and I know I'm the reason. I’m not writing this to pull you into a conversation or force anything from you. I just want to say things clearly, without ego, without overthinking.</p>
+
+        <p>I care about you — more than I express sometimes, and more than I show on the surface. I don’t always get everything right, and I won’t pretend otherwise. But I’m trying to understand things better instead of reacting fast or assuming.</p>
+
+        <p>You don’t owe me a reply right now. You don’t have to forgive instantly or act like nothing happened. Take your time. Whenever you’re ready — even if that’s later — I’ll listen properly. With patience. No excuses.</p>
+
+        <div class="signature">— Maheshwaran</div>
+
+        <!-- BUTTONS -->
+        <div style="margin-top: 24px;">
+            <a class="btn" href="reason.html">← Back</a>
+            <a class="btn btn-red" href="truth.html" style="margin-left:10px;">Things I want to say →</a>
+        </div>
+    </div>
+
+</body>
+</html>

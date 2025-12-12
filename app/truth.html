@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Things I Want To Say Properly</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+        :root {
+            --bg: #080a14;
+            --card: #111421;
+            --text: #e8e8e8;
+            --muted: #a8a8a8;
+            --accent: #ff4f4f;
+            --soft: #262b3d;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #0d1024, #050711 60%);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            padding: 40px 20px;
+            max-width: 760px;
+            margin: auto;
+            animation: fadeIn 0.9s ease forwards;
+            line-height: 1.8;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255,79,79,0.22);
+        }
+
+        .card {
+            background: var(--card);
+            padding: 26px;
+            border-radius: 12px;
+            box-shadow: 0 0 14px rgba(0,0,0,0.4);
+            animation: fadeIn 1.2s ease forwards;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 14px 0;
+            font-size: 15px;
+            color: var(--muted);
+            line-height: 1.7;
+            position: relative;
+            padding-left: 18px;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .signature {
+            margin-top: 22px;
+            font-size: 14px;
+            opacity: 0.75;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 26px;
+            padding: 10px 16px;
+            background: var(--soft);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.25s;
+        }
+
+        .btn:hover {
+            background: #34394f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Things I Want To Say Properly</h1>
+
+    <div class="card">
+        <ul>
+            <li>I never meant to hurt you — even if I did. I’m not ignoring what you felt.</li>
+
+            <li>I react fast sometimes, but when it comes to you… I actually feel things deeply. That’s why I’m trying to grow instead of just defending myself.</li>
+
+            <li>You don’t need to be okay immediately. Your feelings are valid, and I respect the space you need.</li>
+
+            <li>If something matters to you, then it matters to me too — even if I understand it late.</li>
+
+            <li>I don’t want to lose the connection we have. I’m open to fixing things slowly, calmly, and the right way.</li>
+        </ul>
+
+        <div class="signature">— Maheshwaran</div>
+
+        <a class="btn" href="note.html">← Back</a>
+    </div>
+
+</body>
+</html>
